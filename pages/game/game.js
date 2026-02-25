@@ -27,6 +27,11 @@ const gameModules = {
   'casual_003': require('../../games/casual/mahjong'),
   'casual_004': require('../../games/casual/matchpair'),
   'casual_005': require('../../games/casual/clickmatch'),
+  'casual_006': require('../../games/casual/blockmatch'),
+  'casual_007': require('../../games/casual/fruitlink'),
+  'casual_008': require('../../games/casual/finddiff'),
+  'casual_009': require('../../games/casual/blockmatch'),
+  'casual_010': require('../../games/casual/tictactoe'),
   'chess_001': require('../../games/chess/gomoku'),
   'chess_002': require('../../games/chess/reversi'),
   'chess_003': require('../../games/chess/chess'),
@@ -160,6 +165,21 @@ Page({
       ],
       'casual_005': [
         { name: '消除全部', action: 'all' }
+      ],
+      'casual_006': [
+        { name: '清除', action: 'clear' }
+      ],
+      'casual_007': [
+        { name: '提示', action: 'hint' }
+      ],
+      'casual_008': [
+        { name: '显示答案', action: 'show' }
+      ],
+      'casual_009': [
+        { name: '清除', action: 'clear' }
+      ],
+      'casual_010': [
+        { name: '自动获胜', action: 'win' }
       ],
       'chess_001': [
         { name: '自动获胜', action: 'win' }
