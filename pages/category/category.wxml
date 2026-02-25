@@ -14,7 +14,7 @@
     >
       <view class="game-cover">{{item.icon}}</view>
       <text class="game-name">{{item.name}}</text>
-      <view class="difficulty {{item.difficulty}}">{{item.difficulty}}</view>
+      <view class="difficulty {{'difficulty-' + item.difficulty}}">{{item.difficulty}}</view>
     </view>
   </view>
 </view>
