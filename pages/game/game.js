@@ -27,6 +27,25 @@ const gameModules = {
   'casual_003': require('../../games/casual/mahjong'),
   'casual_004': require('../../games/casual/matchpair'),
   'casual_005': require('../../games/casual/clickmatch'),
+  'chess_001': require('../../games/chess/gomoku'),
+  'chess_002': require('../../games/chess/reversi'),
+  'chess_003': require('../../games/chess/chess'),
+  'chess_004': require('../../games/chess/maze'),
+  'chess_005': require('../../games/chess/checkers'),
+  'chess_006': require('../../games/chess/chinesechess'),
+  'chess_007': require('../../games/chess/go'),
+  'chess_008': require('../../games/chess/hunt'),
+  'chess_009': require('../../games/chess/towerdefense'),
+  'match3_001': require('../../games/match3/gemmatch'),
+  'match3_002': require('../../games/match3/bubble'),
+  'match3_003': require('../../games/match3/candy'),
+  'match3_004': require('../../games/match3/zuma'),
+  'match3_005': require('../../games/match3/fruitninja'),
+  'match3_006': require('../../games/match3/icematch'),
+  'match3_007': require('../../games/match3/animalmatch'),
+  'match3_008': require('../../games/match3/cookiematch'),
+  'match3_009': require('../../games/match3/gemswap'),
+  'match3_010': require('../../games/match3/farmmatch'),
 };
 
 Page({
@@ -141,6 +160,63 @@ Page({
       ],
       'casual_005': [
         { name: '消除全部', action: 'all' }
+      ],
+      'chess_001': [
+        { name: '自动获胜', action: 'win' }
+      ],
+      'chess_002': [
+        { name: '自动获胜', action: 'win' }
+      ],
+      'chess_003': [
+        { name: '自动获胜', action: 'win' }
+      ],
+      'chess_004': [
+        { name: '显示路径', action: 'show' }
+      ],
+      'chess_005': [
+        { name: '自动获胜', action: 'win' }
+      ],
+      'chess_006': [
+        { name: '自动获胜', action: 'win' }
+      ],
+      'chess_007': [
+        { name: '一键占位', action: 'fill' }
+      ],
+      'chess_008': [
+        { name: '传送猎物', action: 'teleport' }
+      ],
+      'chess_009': [
+        { name: '加钱', action: 'money' }
+      ],
+      'match3_001': [
+        { name: '打乱', action: 'shuffle' }
+      ],
+      'match3_002': [
+        { name: '清除', action: 'clear' }
+      ],
+      'match3_003': [
+        { name: '自动消除', action: 'auto' }
+      ],
+      'match3_004': [
+        { name: '清除球', action: 'clear' }
+      ],
+      'match3_005': [
+        { name: '减速', action: 'slow' }
+      ],
+      'match3_006': [
+        { name: '打乱', action: 'shuffle' }
+      ],
+      'match3_007': [
+        { name: '自动消除', action: 'auto' }
+      ],
+      'match3_008': [
+        { name: '打乱', action: 'shuffle' }
+      ],
+      'match3_009': [
+        { name: '打乱', action: 'shuffle' }
+      ],
+      'match3_010': [
+        { name: '打乱', action: 'shuffle' }
       ]
     };
     return cheatConfig[gameId] || [];
