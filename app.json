@@ -12,32 +12,6 @@
     "navigationBarTextStyle": "white",
     "backgroundColor": "#f5f6fa"
   },
-  "tabBar": {
-    "color": "#7f8c8d",
-    "selectedColor": "#3498db",
-    "backgroundColor": "#ffffff",
-    "borderStyle": "white",
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "首页",
-        "iconPath": "assets/images/home.png",
-        "selectedIconPath": "assets/images/home-active.png"
-      },
-      {
-        "pagePath": "pages/category/category",
-        "text": "游戏",
-        "iconPath": "assets/images/category.png",
-        "selectedIconPath": "assets/images/category-active.png"
-      },
-      {
-        "pagePath": "pages/profile/profile",
-        "text": "我的",
-        "iconPath": "assets/images/profile.png",
-        "selectedIconPath": "assets/images/profile-active.png"
-      }
-    ]
-  },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
 }
