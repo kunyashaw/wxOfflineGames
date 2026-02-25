@@ -1,0 +1,44 @@
+<view class="game-container">
+  <view class="game-toolbar">
+    <view class="toolbar-btn" bindtap="goBack">←</view>
+    <view class="game-title">{{gameName}}</view>
+    <view class="toolbar-btns">
+      <view class="toolbar-btn" bindtap="toggleFavorite">{{isFavorite ? '❤️' : '🤍'}}</view>
+      <view class="toolbar-btn" bindtap="toggleCheat">🎮</view>
+      <view class="toolbar-btn" bindtap="shareGame">📤</view>
+      <view class="toolbar-btn" bindtap="toggleSound">{{soundEnabled ? '🔊' : '🔇'}}</view>
+    </view>
+  </view>
+  
+  <canvas 
+    class="game-canvas" 
+    id="gameCanvas" 
+    type="2d"
+    bindtouchstart="onTouchStart"
+    bindtouchmove="onTouchMove"
+    bindtouchend="onTouchEnd"
+  ></canvas>
+  
+  <view class="game-score">
+    <text>分数: {{score}}</text>
+    <text>最高: {{highScore}}</text>
+  </view>
+  
+  <view class="game-controls">
+    <view class="control-btn" bindtap="restartGame">重新开始</view>
+  </view>
+  
+  <view class="cheat-panel" wx:if="{{showCheat}}">
+    <view class="cheat-title">金手指</view>
+    <view 
+      class="cheat-item" 
+      wx:for="{{cheats}}" 
+      wx:key="name"
+      bindtap="applyCheat"
+      data-cheat="{{item}}"
+    >
+      {{item.name}}
+    </view>
+    <view wx:if="{{cheats.length === 0}}" class="cheat-empty">暂无金手指</view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="header">
+    <text class="back-btn" bindtap="goBack">← 返回</text>
+    <text class="category-title">{{category.name}}</text>
+  </view>
+  
+  <view class="game-grid">
+    <view 
+      class="game-card" 
+      wx:for="{{category.games}}" 
+      wx:key="id"
+      data-id="{{item.id}}"
+      bindtap="goToGame"
+    >
+      <view class="game-cover">{{item.icon}}</view>
+      <text class="game-name">{{item.name}}</text>
+      <view class="difficulty {{item.difficulty}}">{{item.difficulty}}</view>
+    </view>
+  </view>
+</view>

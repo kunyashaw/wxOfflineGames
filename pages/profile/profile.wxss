@@ -1,0 +1,74 @@
+.profile-header {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  font-size: 60px;
+  background: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.username {
+  display: block;
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.empty {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 20px;
+}
+
+.score-item, .fav-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.score-item:last-child, .fav-item:last-child {
+  border-bottom: none;
+}
+
+.score-value {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.setting-item:first-child {
+  border-bottom: 1px solid #f0f0f0;
+}

@@ -1,0 +1,98 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #1a1a2e;
+}
+
+.game-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #16213e;
+  color: white;
+}
+
+.toolbar-btn {
+  padding: 8px 12px;
+  font-size: 18px;
+}
+
+.game-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.toolbar-btns {
+  display: flex;
+  gap: 5px;
+}
+
+.game-canvas {
+  flex: 1;
+  width: 100%;
+}
+
+.game-score {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: #16213e;
+  color: white;
+  font-size: 18px;
+}
+
+.game-controls {
+  padding: 15px;
+  background: #16213e;
+  display: flex;
+  justify-content: center;
+}
+
+.control-btn {
+  background: #3498db;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.cheat-panel {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  background: #16213e;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 100;
+  min-width: 120px;
+}
+
+.cheat-title {
+  color: #f39c12;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.cheat-item {
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #2c3e50;
+}
+
+.cheat-item:last-child {
+  border-bottom: none;
+}
+
+.cheat-item:active {
+  background: #3498db;
+}
+
+.cheat-empty {
+  color: #7f8c8d;
+  font-size: 12px;
+  padding: 8px;
+  text-align: center;
+}

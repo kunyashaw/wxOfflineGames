@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="header">
+    <text class="title">小游戏合集</text>
+    <text class="subtitle">50款免费单机游戏</text>
+  </view>
+  
+  <view class="category-list">
+    <view 
+      class="category-card" 
+      wx:for="{{categories}}" 
+      wx:key="id"
+      data-id="{{item.id}}"
+      bindtap="goToCategory"
+    >
+      <text class="category-icon">{{item.icon}}</text>
+      <text class="category-name">{{item.name}}</text>
+      <text class="category-count">{{item.games.length}}款游戏</text>
+    </view>
+  </view>
+</view>
